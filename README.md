@@ -80,5 +80,34 @@ The program should output two files named "next_state.txt" showing the next stat
 * The format of “traverse_log.txt” should be as shown below.
     
     Node,Depth,Value
+
     B2,1,Infinity
+    
     B3,1,Infinity
+
+<b>Note:</b> The MiniMax traverse log requires 3 columns. Each column is separated by “,” (a single comma). Three columns are node, depth and value. Everything shown here is case sensitive.
+“Node”: is the name of the pit you chosen as the next move. For example, player-1 chooses pit “B2” as the first move to be explored as per the evaluation order. The depth of the node “B2” is 1. Then player-1 chooses pit “B3” as his/her next move as move from pit “B2” ends up putting the last stone in the Mancala of player-1 and according to the rules of the game, player-1 needs to make another move. As this is the turn from the same player, the depth of the node “B3” is also 1. Next, player-2 chooses pit “A2” as his/her move and the depth of the node “A2” becomes 2. “root” is the special name assigned to the root node.
+
+<b>“Depth”:</b> is the depth of the node. The depth of root node is 0.
+
+<b>“Value”:</b> is the value of the node. The value is initialized to <b>“-Infinity” for the max node</b> and <b>“Infinity” for the min node</b>. The value will be updated when its children return the value to the node. The value of the leaf nodes is the evaluated value, for example, node “A2” has value 1.
+
+The algorithm traverses from root node. The log should show both when:
+
+1) The algorithm traverses down to the node.
+
+2) The value of the node is updated from its children.
+
+<b>Alpha-Beta:</b>
+
+The program should output two files named “next_state.txt” showing the next state of the board after the greedy move and “traverse_log.txt” showing the traverse log of your program in the following format.
+* The format of “next_state.txt” should be the same as shown above.
+* The format of “traverse_log.txt” will be similar to the one for MiniMax, but with two additional columns.
+
+Node,Depth,Value,Alpha,Beta
+
+........
+
+........
+
+........
