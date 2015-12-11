@@ -87,7 +87,7 @@ The program should output two files named "next_state.txt" showing the next stat
 
 <b>Note:</b> The MiniMax traverse log requires 3 columns. Each column is separated by “,” (a single comma). Three columns are node, depth and value. Everything shown here is case sensitive.
 
-<b>“Node”:<b> is the name of the pit you chosen as the next move. For example, player-1 chooses pit “B2” as the first move to be explored as per the evaluation order. The depth of the node “B2” is 1. Then player-1 chooses pit “B3” as his/her next move as move from pit “B2” ends up putting the last stone in the Mancala of player-1 and according to the rules of the game, player-1 needs to make another move. As this is the turn from the same player, the depth of the node “B3” is also 1. Next, player-2 chooses pit “A2” as his/her move and the depth of the node “A2” becomes 2. “root” is the special name assigned to the root node.
+<b>“Node”:</b> is the name of the pit you chosen as the next move. For example, player-1 chooses pit “B2” as the first move to be explored as per the evaluation order. The depth of the node “B2” is 1. Then player-1 chooses pit “B3” as his/her next move as move from pit “B2” ends up putting the last stone in the Mancala of player-1 and according to the rules of the game, player-1 needs to make another move. As this is the turn from the same player, the depth of the node “B3” is also 1. Next, player-2 chooses pit “A2” as his/her move and the depth of the node “A2” becomes 2. “root” is the special name assigned to the root node.
 
 <b>“Depth”:</b> is the depth of the node. The depth of root node is 0.
 
