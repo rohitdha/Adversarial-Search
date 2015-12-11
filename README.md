@@ -51,3 +51,34 @@ Given a file <b>input.txt</b> that describes the current state of the game.
 * \<Board state for player-1\>
 * \<#stones in player-2’s mancala\>
 * \<#stones in player-1’s mancala\>
+
+* The sample input file here gives you the description about a 2x3 Mancala board.
+* The input file above asks you to perform task #2, i.e. MiniMax.
+* You will be playing as player-1. Remember that player-1 is assigned the lower side of the board.
+* The cut off depth for MiniMax is given as 2. You should ignore the cut off depth if the task is Greedy.
+* Line-4 represents the board state for player-2, i.e. the upper side of the board. Each number is separated by a single white space.
+* Line-5 represents the board state for player-1, i.e. the upper side of the board. Each number is separated by a single white space.
+* Line-6 gives you the number of stones in player-2’s mancala.
+* Line-7 gives you the number of stones in player-1’s mancala.
+* You can assume that there will be at least one legal move available for the current player.
+
+### Output:
+-----------
+
+<b>Greedy:</b>
+The program should output one file named “next_state.txt” showing the next state of the board after the greedy move in the following format.
+
+* Line-1 represents the board state for player-2, i.e. the upper side of the board. Each number is separated by a single white space.
+* Line-2 represents the board state for player-1, i.e. the upper side of the board. Each number is separated by a single white space.
+* Line-3 gives you the number of stones in player-2’s mancala.
+* Line-4 gives you the number of stones in player-1’s mancala.
+
+
+<b>MiniMax:</b>
+The program should output two files named "next_state.txt" showing the next state of the board after the greedy move and “traverse_log.txt” showing the traverse log of your program in the following format.
+* The format of “next_state.txt” should be the same as described above.
+* The format of “traverse_log.txt” should be as shown below.
+    
+    Node,Depth,Value
+    B2,1,Infinity
+    B3,1,Infinity
