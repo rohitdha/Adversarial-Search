@@ -42,21 +42,21 @@ adversarialSearch::adversarialSearch() {
 
 // Reading the data and storing it into vector
 void adversarialSearch::setData(vector<string> &line) {
-	vector<string>::iterator it;
-	it = line.begin();
-	this->task = atoi((*it).c_str());
-	it++;
-	this->p_turn = atoi((*it).c_str());
-	it++;
-	this->c_o_depth = atoi((*it).c_str());
-	it++;
-	this->bs_p2 = *it;
-	it++;
-	this->bs_p1 = *it;
-	it++;
-	this->p2_mancala = atoi((*it).c_str());
-	it++;
-	this->p1_mancala = atoi((*it).c_str());
+	vector<string>::iterator read_it;
+	read_it = line.begin();
+	this->task = atoi((*read_it).c_str());
+	read_it++;
+	this->p_turn = atoi((*read_it).c_str());
+	read_it++;
+	this->c_o_depth = atoi((*read_it).c_str());
+	read_it++;
+	this->bs_p2 = *read_it;
+	read_it++;
+	this->bs_p1 = *read_it;
+	read_it++;
+	this->p2_mancala = atoi((*read_it).c_str());
+	read_it++;
+	this->p1_mancala = atoi((*read_it).c_str());
 }
 
 // Returns the Task: Greddy, MiniMax or Alpha-Beta
