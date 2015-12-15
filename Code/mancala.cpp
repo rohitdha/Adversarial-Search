@@ -93,6 +93,9 @@ int adversarialSearch::get_whose_turn() {
 int adversarialSearch::get_c_o_depth() {
 	return this->c_o_depth;
 }
+//Destructor
+adversarialSearch::~adversarialSearch() {
+}
 
 // Storing the Complete Board into a map after reading the Player1's and Player2's board state
 void adversarialSearch::fill_up_board() {
