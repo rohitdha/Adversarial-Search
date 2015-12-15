@@ -32,11 +32,6 @@
 
 using namespace std;
 
-int val_test = -9999;
-int value_test = -9999;
-int valuey_test = -9999;
-int end_cond =0;
-
 map<int,int> final_state;
 map<int,int> final_state_root;
 map<int,int> final_state_level;
@@ -382,6 +377,11 @@ string adversarialSearch::estimate_value(int value) {
 		
 	return return_type;
 }
+
+int val_test = -9999;
+int value_test = -9999;
+int valuey_test = -9999;
+int end_cond =0;
 
 ///// Greedy STARTS HERE /////
 void adversarialSearch::greedy() {
