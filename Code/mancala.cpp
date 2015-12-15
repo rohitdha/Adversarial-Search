@@ -1,3 +1,20 @@
+/*
+	Author: Rohit Dhawan
+	Project: Adversarial Search - Game Playing Agent
+	Domain: Artificial Intelligence
+	Algorithm: Greedy, MiniMax, Alpha-Beta Pruning 
+	
+	Sample Input:
+		1							< Algorithm to run - {1- Greedy, 2- MiniMax 3- Alpha-Beta}>
+		1							<Player's turn>
+		3							<Cut Off Depth>
+		0 0 0 1 1						<Player 2 Board State>
+		1 0 0 0 1						<Player 1 Board State>
+		0							<Player 2 Mancala's>
+		0							<Player 1 Mancala's>
+		
+	More Details in README.md
+*/
 #include <iostream>
 #include <algorithm>
 #include <fstream>
