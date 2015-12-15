@@ -1,0 +1,19 @@
+Node,Depth,Value
+root,0,-Infinity
+B2,1,Infinity
+A5,2,-Infinity
+B6,3,+/-Infinity	OPTIONAL
+B6,3,0
+A5,2,0
+B2,1,0
+A6,2,-Infinity
+B6,3,+/-Infinity	OPTIONAL
+B6,3,0
+A6,2,0
+B2,1,0
+root,0,0
+B6,1,-Infinity
+B2,1,+/-Infinity	OPTIONAL
+B2,1,0
+B6,1,0
+root,0,0
